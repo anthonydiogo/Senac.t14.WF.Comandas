@@ -34,11 +34,17 @@ namespace Comandas
 
         private void btnPedidocozinha_Click(object sender, EventArgs e)
         {
-            new FrmPedidoCozinha().ShowDialog();        }
+            new FrmPedidoCozinha().ShowDialog();
+        }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             new FrmUsuarios().ShowDialog();
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

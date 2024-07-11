@@ -33,6 +33,7 @@
             btnPedidocozinha = new ReaLTaiizor.Controls.MetroButton();
             btnComanda = new ReaLTaiizor.Controls.MetroButton();
             btnCardapio = new ReaLTaiizor.Controls.MetroButton();
+            btnVoltar = new ReaLTaiizor.Controls.AirButton();
             gpxPrincipal.SuspendLayout();
             SuspendLayout();
             // 
@@ -157,11 +158,26 @@
             btnCardapio.ThemeName = "MetroLight";
             btnCardapio.Click += btnCardapio_Click;
             // 
+            // btnVoltar
+            // 
+            btnVoltar.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8UFBT/gICA/w==";
+            btnVoltar.Font = new Font("Segoe UI", 9F);
+            btnVoltar.Image = null;
+            btnVoltar.Location = new Point(28, 370);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.NoRounding = false;
+            btnVoltar.Size = new Size(150, 68);
+            btnVoltar.TabIndex = 1;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.Transparent = false;
+            btnVoltar.Click += btnVoltar_Click;
+            // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnVoltar);
             Controls.Add(gpxPrincipal);
             Name = "FrmPrincipal";
             Text = "Form1";
@@ -176,5 +192,6 @@
         private ReaLTaiizor.Controls.MetroButton btnPedidocozinha;
         private ReaLTaiizor.Controls.MetroButton btnComanda;
         private ReaLTaiizor.Controls.MetroButton btnCardapio;
+        private ReaLTaiizor.Controls.AirButton btnVoltar;
     }
 }
