@@ -34,11 +34,13 @@
             btnComanda = new ReaLTaiizor.Controls.MetroButton();
             btnCardapio = new ReaLTaiizor.Controls.MetroButton();
             btnVoltar = new ReaLTaiizor.Controls.AirButton();
+            cyberTextBox1 = new ReaLTaiizor.Controls.CyberTextBox();
             gpxPrincipal.SuspendLayout();
             SuspendLayout();
             // 
             // gpxPrincipal
             // 
+            gpxPrincipal.BackColor = Color.White;
             gpxPrincipal.Controls.Add(Usuarios);
             gpxPrincipal.Controls.Add(btnPedidocozinha);
             gpxPrincipal.Controls.Add(btnComanda);
@@ -48,7 +50,6 @@
             gpxPrincipal.Size = new Size(741, 263);
             gpxPrincipal.TabIndex = 0;
             gpxPrincipal.TabStop = false;
-            gpxPrincipal.Text = "groupBox1";
             // 
             // Usuarios
             // 
@@ -62,9 +63,9 @@
             Usuarios.IsDerivedStyle = true;
             Usuarios.Location = new Point(571, 56);
             Usuarios.Name = "Usuarios";
-            Usuarios.NormalBorderColor = Color.FromArgb(65, 177, 225);
-            Usuarios.NormalColor = Color.FromArgb(65, 177, 225);
-            Usuarios.NormalTextColor = Color.White;
+            Usuarios.NormalBorderColor = Color.Black;
+            Usuarios.NormalColor = Color.FromArgb(255, 192, 192);
+            Usuarios.NormalTextColor = Color.Black;
             Usuarios.PressBorderColor = Color.FromArgb(35, 147, 195);
             Usuarios.PressColor = Color.FromArgb(35, 147, 195);
             Usuarios.PressTextColor = Color.White;
@@ -89,9 +90,9 @@
             btnPedidocozinha.IsDerivedStyle = true;
             btnPedidocozinha.Location = new Point(390, 56);
             btnPedidocozinha.Name = "btnPedidocozinha";
-            btnPedidocozinha.NormalBorderColor = Color.FromArgb(65, 177, 225);
-            btnPedidocozinha.NormalColor = Color.FromArgb(65, 177, 225);
-            btnPedidocozinha.NormalTextColor = Color.White;
+            btnPedidocozinha.NormalBorderColor = Color.Black;
+            btnPedidocozinha.NormalColor = Color.CornflowerBlue;
+            btnPedidocozinha.NormalTextColor = Color.Black;
             btnPedidocozinha.PressBorderColor = Color.FromArgb(35, 147, 195);
             btnPedidocozinha.PressColor = Color.FromArgb(35, 147, 195);
             btnPedidocozinha.PressTextColor = Color.White;
@@ -116,9 +117,9 @@
             btnComanda.IsDerivedStyle = true;
             btnComanda.Location = new Point(203, 56);
             btnComanda.Name = "btnComanda";
-            btnComanda.NormalBorderColor = Color.FromArgb(65, 177, 225);
-            btnComanda.NormalColor = Color.FromArgb(65, 177, 225);
-            btnComanda.NormalTextColor = Color.White;
+            btnComanda.NormalBorderColor = Color.Black;
+            btnComanda.NormalColor = Color.YellowGreen;
+            btnComanda.NormalTextColor = Color.Black;
             btnComanda.PressBorderColor = Color.FromArgb(35, 147, 195);
             btnComanda.PressColor = Color.FromArgb(35, 147, 195);
             btnComanda.PressTextColor = Color.White;
@@ -143,9 +144,9 @@
             btnCardapio.IsDerivedStyle = true;
             btnCardapio.Location = new Point(17, 56);
             btnCardapio.Name = "btnCardapio";
-            btnCardapio.NormalBorderColor = Color.FromArgb(65, 177, 225);
-            btnCardapio.NormalColor = Color.FromArgb(65, 177, 225);
-            btnCardapio.NormalTextColor = Color.White;
+            btnCardapio.NormalBorderColor = Color.Black;
+            btnCardapio.NormalColor = Color.PaleGoldenrod;
+            btnCardapio.NormalTextColor = Color.Black;
             btnCardapio.PressBorderColor = Color.FromArgb(35, 147, 195);
             btnCardapio.PressColor = Color.FromArgb(35, 147, 195);
             btnCardapio.PressTextColor = Color.White;
@@ -172,11 +173,42 @@
             btnVoltar.Transparent = false;
             btnVoltar.Click += btnVoltar_Click;
             // 
+            // cyberTextBox1
+            // 
+            cyberTextBox1.Alpha = 20;
+            cyberTextBox1.BackColor = Color.Transparent;
+            cyberTextBox1.Background_WidthPen = 3F;
+            cyberTextBox1.BackgroundPen = true;
+            cyberTextBox1.ColorBackground = Color.White;
+            cyberTextBox1.ColorBackground_Pen = Color.Black;
+            cyberTextBox1.ColorLighting = Color.FromArgb(29, 200, 238);
+            cyberTextBox1.ColorPen_1 = Color.FromArgb(29, 200, 238);
+            cyberTextBox1.ColorPen_2 = Color.FromArgb(37, 52, 68);
+            cyberTextBox1.CyberTextBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            cyberTextBox1.Font = new Font("Arial", 13F);
+            cyberTextBox1.ForeColor = Color.Black;
+            cyberTextBox1.Lighting = false;
+            cyberTextBox1.LinearGradientPen = false;
+            cyberTextBox1.Location = new Point(28, 12);
+            cyberTextBox1.Name = "cyberTextBox1";
+            cyberTextBox1.PenWidth = 15;
+            cyberTextBox1.RGB = false;
+            cyberTextBox1.Rounding = true;
+            cyberTextBox1.RoundingInt = 60;
+            cyberTextBox1.Size = new Size(741, 54);
+            cyberTextBox1.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            cyberTextBox1.TabIndex = 2;
+            cyberTextBox1.Tag = "Cyber";
+            cyberTextBox1.TextButton = "";
+            cyberTextBox1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            cyberTextBox1.Timer_RGB = 300;
+            // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(cyberTextBox1);
             Controls.Add(btnVoltar);
             Controls.Add(gpxPrincipal);
             Name = "FrmPrincipal";
@@ -193,5 +225,6 @@
         private ReaLTaiizor.Controls.MetroButton btnComanda;
         private ReaLTaiizor.Controls.MetroButton btnCardapio;
         private ReaLTaiizor.Controls.AirButton btnVoltar;
+        private ReaLTaiizor.Controls.CyberTextBox cyberTextBox1;
     }
 }

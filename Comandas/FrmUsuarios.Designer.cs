@@ -54,10 +54,10 @@
             btnVoltar.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8UFBT/gICA/w==";
             btnVoltar.Font = new Font("Segoe UI", 9F);
             btnVoltar.Image = null;
-            btnVoltar.Location = new Point(30, 453);
+            btnVoltar.Location = new Point(30, 476);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.NoRounding = false;
-            btnVoltar.Size = new Size(150, 68);
+            btnVoltar.Size = new Size(105, 45);
             btnVoltar.TabIndex = 0;
             btnVoltar.Text = "Voltar";
             btnVoltar.Transparent = false;
@@ -79,6 +79,7 @@
             // btnSalvar
             // 
             btnSalvar.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8UFBT/gICA/w==";
+            btnSalvar.Enabled = false;
             btnSalvar.Font = new Font("Segoe UI", 9F);
             btnSalvar.Image = null;
             btnSalvar.Location = new Point(331, 265);
@@ -93,6 +94,7 @@
             // btnEditar
             // 
             btnEditar.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8UFBT/gICA/w==";
+            btnEditar.Enabled = false;
             btnEditar.Font = new Font("Segoe UI", 9F);
             btnEditar.Image = null;
             btnEditar.Location = new Point(179, 265);
@@ -107,6 +109,7 @@
             // btnExcluir
             // 
             btnExcluir.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8UFBT/gICA/w==";
+            btnExcluir.Enabled = false;
             btnExcluir.Font = new Font("Segoe UI", 9F);
             btnExcluir.Image = null;
             btnExcluir.Location = new Point(497, 265);
@@ -116,6 +119,7 @@
             btnExcluir.TabIndex = 4;
             btnExcluir.Text = "Excluir";
             btnExcluir.Transparent = false;
+            btnExcluir.Click += btnExcluir_Click;
             // 
             // cyberGroupBox1
             // 
@@ -334,15 +338,17 @@
             // dgvUsuarios
             // 
             dgvUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUsuarios.Location = new Point(30, 339);
+            dgvUsuarios.Location = new Point(30, 327);
             dgvUsuarios.Name = "dgvUsuarios";
             dgvUsuarios.RowHeadersWidth = 62;
-            dgvUsuarios.Size = new Size(737, 108);
+            dgvUsuarios.Size = new Size(737, 143);
             dgvUsuarios.TabIndex = 6;
+            dgvUsuarios.CellClick += dgvUsuarios_CellClick;
             // 
             // btnCancelar
             // 
             btnCancelar.Customization = "7e3t//Ly8v/r6+v/5ubm/+vr6//f39//p6en/zw8PP8UFBT/gICA/w==";
+            btnCancelar.Enabled = false;
             btnCancelar.Font = new Font("Segoe UI", 9F);
             btnCancelar.Image = null;
             btnCancelar.Location = new Point(656, 265);
@@ -352,6 +358,7 @@
             btnCancelar.TabIndex = 7;
             btnCancelar.Text = "Cancelar";
             btnCancelar.Transparent = false;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // FrmUsuarios
             // 
@@ -368,6 +375,7 @@
             Controls.Add(btnVoltar);
             Name = "FrmUsuarios";
             Text = "FrmUsuarios";
+            Load += FrmUsuarios_Load;
             cyberGroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvUsuarios).EndInit();
             ResumeLayout(false);
