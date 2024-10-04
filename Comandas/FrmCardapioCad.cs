@@ -15,9 +15,12 @@ namespace Comandas
         // variável que indica se está criando um novo cardapio
         // bool = true, false
         bool ehNovo = false;
-        public FrmCardapioCad(bool acao)
+        private FrmCardapio _frmCardapio;
+
+        public FrmCardapioCad(bool acao, FrmCardapio frmCardapio)
         {
             ehNovo = acao;
+            _frmCardapio = frmCardapio;
             InitializeComponent();
         }
 
@@ -36,7 +39,9 @@ namespace Comandas
             else
             {   // executa o método que realiza o UPDATE na tabela
                 AtualizarCardapio();
-            }   // feca a tela atual (FrmCardapioCad)
+            }
+            _frmCardapio.ListarCardapios();
+            // feca a tela atual (FrmCardapioCad)
             Close();
         }
 
